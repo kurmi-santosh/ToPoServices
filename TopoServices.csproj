@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Controllers\V1\" />
+    <None Remove="Data\" />
+    <None Remove="Contracts\" />
+    <None Remove="Contracts\V1\" />
+    <None Remove="Contracts\V1\Requests\" />
+    <None Remove="Contracts\V1\Responses\" />
+    <None Remove="Services\" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Configuration\" />
+    <None Remove="Domain\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Controllers\V1\" />
+    <Folder Include="Data\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\V1\" />
+    <Folder Include="Contracts\V1\Requests\" />
+    <Folder Include="Contracts\V1\Responses\" />
+    <Folder Include="Services\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Domain\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+</Project>
